@@ -16,6 +16,9 @@ All installers are built on a Mac from your copy of the disc, and include
 the game data so they work with nothing else needed. They therefore contain
 the copyrighted game: keep them for your own use.
 
+Ready-built installers are attached to this (private) repository's
+[Releases](../../releases/latest).
+
 | Platform | Installer | Installs to |
 | --- | --- | --- |
 | macOS 10.15+ (Apple Silicon and Intel) | `JumpStart-4th-Grade-<version>-macOS.dmg`: open it and drag the game to Applications | `/Applications` |
