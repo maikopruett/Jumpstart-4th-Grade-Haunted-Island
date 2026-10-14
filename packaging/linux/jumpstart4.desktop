@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=JumpStart 4th Grade
+GenericName=Educational Game
+Comment=Haunted Island: a learning adventure for 4th graders
+Exec=jumpstart4
+Icon=jumpstart4
+Terminal=false
+Categories=Game;Education;KidsGame;
+Keywords=jumpstart;haunted;island;knowledge adventure;

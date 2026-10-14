@@ -1,0 +1,442 @@
+# addr	name	[prototype]   -- applied by re/scripts/ApplyNames.java
+# ---- Borland RTL
+0042a9c0	sprintf	int sprintf(char *buf, char *fmt, ...)
+00427c68	memcpy	void * memcpy(void *dst, void *src, uint n)
+00427c8c	memmove	void * memmove(void *dst, void *src, uint n)
+00427cd8	memset	void * memset(void *dst, int c, uint n)
+00427d08	strcat	char * strcat(char *dst, char *src)
+00427d44	strchr	char * strchr(char *s, int c)
+00427d6c	strcmp	int strcmp(char *a, char *b)
+00427d98	strcpy	char * strcpy(char *dst, char *src)
+00427dc8	strlen	int strlen(char *s)
+00427de4	memcmp	int memcmp(void *a, void *b, uint n)
+00427e28	stricmp	int stricmp(char *a, char *b)
+00427e70	strncpy	char * strncpy(char *dst, char *src, uint n)
+00427f20	strrchr	char * strrchr(char *s, int c)
+00427f4c	strstr	char * strstr(char *s, char *sub)
+00427ff0	strtok	char * strtok(char *s, char *delims)
+0042bae8	toupper	int toupper(int c)
+0042bf68	Rand	int Rand(void)
+0042bf34	SRand	void SRand(uint seed)
+0042e9cc	time	int time(int *t)
+0042dbe4	setjmp	int setjmp(void *jb)
+0042dc1a	longjmp	void longjmp(void *jb, int v)
+0042bb8c	ftol
+# ---- WinMain / app
+0041c62c	WinMain
+0041cadc	Win_RegisterClass
+0041cbbc	Win_CreateMainWindow
+0041cf9d	App_InitEngine
+0041d03a	App_CheckSystem
+0041d1a1	Pal_InitBlack
+0041d1d5	App_ShutdownEngine
+0041d220	Fatal_Error
+004025c6	App_Quit
+# ---- core
+004253b8	Mem_Alloc	void * Mem_Alloc(uint n)
+0042540b	Mem_Free	void Mem_Free(void *p)
+0041d254	List_Init
+0041d28c	List_Destroy
+0041d2a9	List_IsEmpty
+0041d2bb	List_Count
+0041d2c6	List_CurIsFirst
+0041d2dc	List_CurIsLast
+0041d2f2	List_AtEnd
+0041d305	List_First
+0041d315	List_Last
+0041d325	List_Next
+0041d336	List_Prev
+0041d347	List_GetCur
+0041d37c	List_CurData
+0041d389	List_InsertAfter
+0041d3eb	List_InsertBefore
+0041d44d	List_PushFront
+0041d4a8	List_PushBack
+0041d503	List_InsertSorted
+0041d578	List_RemoveCur
+0041d5ca	List_Clear
+0041d62d	List_PopFront
+0041d666	List_PopFront2
+0041d6a0	Pt_Set	void Pt_Set(int *p, int x, int y)
+0041d6b3	Pt_Set2
+0041d6c6	Pt_Set3
+0041d6d9	Rect_Set	void Rect_Set(int *r, int x, int y, int w, int h)
+0041d6f8	Rect_FromPoints
+0041d743	Pt_Set4	void Pt_Set4(int *p, int x, int y)
+0041d756	Rect_FromLTRB
+0041d77b	Rect_ToLTRB
+0041d7a0	Rect_Set2
+0041d7bf	Rect_SetLTRB
+0041d7e4	Pt_InRect
+0041d818	Rect_Inside
+0041d856	Rect_InsideStrict
+0041d8c0	Rect_Intersect	int Rect_Intersect(int x1, int y1, int w1, int h1, int x2, int y2, int w2, int h2, int *out)
+0041d94e	Rect_Clip	int Rect_Clip(int *r, int x, int y, int w, int h)
+0041d976	Rect_Union
+0041d9d2	Clip_OutCode
+0041da0f	Clip_Line
+00427430	Util_Shuffle	uint Util_Shuffle(void *items, uint count, uint size)
+# ---- input
+0041dbdc	Hotspot_Init
+0041dbff	Hotspot_Shutdown
+0041dc1a	Hotspot_Set	void Hotspot_Set(short id, int x, int y, int w, int h)
+0041dc98	Hotspot_Remove
+0041dcdc	Hotspot_Clear
+0041dcec	Hotspot_HitTest
+0041dd4e	Hotspot_Push
+0041ddb6	Hotspot_Pop
+0041ddd2	Hotspot_DebugDraw
+0041de2c	Event_Init
+0041de4c	Event_Shutdown
+0041de5c	Event_OnKeyDown
+0041e083	Event_OnChar
+0041e0ad	Event_OnMouseButton
+0041e156	Event_SetMousePos
+0041e182	Event_PostCode
+0041e1be	Event_PostQuit
+0041e1e0	Event_PostUser
+0041e214	Event_Pump
+0041e27b	Event_Wait	uint Event_Wait(void)
+0041e355	Event_Poll	uint Event_Poll(void)
+0041e36c	Event_Flush
+0041e386	Mouse_GetPos	void Mouse_GetPos(int *pt)
+0041e3c4	Mouse_Buttons
+0041e42d	Key_Modifiers
+0041e4b0	Timer_Begin
+0041e4bc	Timer_End
+0041e4c8	Time_Get	uint Time_Get(void)
+0041e4d4	Timer_Set
+0041e4eb	Timer_Expired
+0041e505	Timer_Wait
+0041e51d	Time_Delay
+0041e537	Stopwatch_Reset
+0041e54d	Stopwatch_Pause
+0041e563	Stopwatch_Resume
+0041e572	Stopwatch_Get
+0041e58d	Time_PauseBegin
+0041e59c	Time_PauseEnd
+0041e5c8	Cursor_InitStd
+0041e5ef	Cursor_Load	void Cursor_Load(ushort *ids)
+0041e637	Cursor_Free
+0041e663	Cursor_Set
+0041e68c	Cursor_Refresh
+0041e69f	Cursor_SetCallback	void * Cursor_SetCallback(void *cb)
+0041e6b2	Cursor_OnSetCursor
+0041e6c6	Cursor_Show
+0041e757	Mouse_Warp
+0041e7a0	App_InitExeDir
+0041e828	Ini_Path
+0041e848	Ini_GetInt
+0041e8ba	Ini_WriteInt	void Ini_WriteInt(char *section, char *key, int value)
+0041e904	Ini_GetString
+0041e93b	Ini_WriteString
+# ---- graphics
+0041e970	Gfx_PickStrategy
+0041ec3a	Gfx_Init
+0041f194	Win_PaintBorders
+0041f26e	Gfx_Shutdown
+0041f3b5	Screen_Blt
+0041f481	Screen_StretchBlt
+0041f544	Pal_Set	void Pal_Set(void *rgb, int mode)
+0041f8c5	Pal_SetQuads
+0041f8f8	Pal_ResetSystem
+0041f981	Pal_SysColorsOn
+0041f9f2	Pal_SysColorsOff
+0041fa48	Pal_QuadsToRGB
+0041fa86	Pal_RGBToQuads
+0041fac1	Pal_SetBlack
+0041faf6	Pal_FadeTo	void Pal_FadeTo(void *rgb, int mode)
+0041fcf6	Pal_FadeToBlack
+0041fd2b	Pal_FadeTo2	void Pal_FadeTo2(void *rgb, int mode)
+0041fd40	Screen_Flush
+0041fda4	Screen_FlushAll
+0041fdc9	Screen_Flush2x
+0041fe7e	Gfx_PixelPtr	byte * Gfx_PixelPtr(int x, int y)
+0041febd	Gfx_Offset
+0041feeb	Gfx_CopyRect
+0041ff64	Gfx_SaveBg
+0041ffc9	Gfx_RestoreBg
+00420046	Gfx_Copy2x
+004200d1	Gfx_GetPixel
+00420114	Gfx_SetPixel
+00420156	Gfx_Line
+00420313	Gfx_FrameRect
+004203e4	Gfx_FillRect
+00420479	Gfx_BlitRaw	void Gfx_BlitRaw(int x, int y, void *src, int w, int h, int transparent, byte key)
+0042055b	Gfx_RemapRect	void Gfx_RemapRect(int x, int y, int w, int h, void *table)
+004205fa	Gfx_InvertRect
+00420638	Surf_Init
+00420664	Gfx_SetTarget
+004206a5	Gfx_ResetTarget
+004206d0	Gfx_BlitRLE	void Gfx_BlitRLE(int x, int y, void *data, int w, int h, int transparent, byte key)
+0042080b	Img_Draw	void Img_Draw(int x, int y, void *img, int transparent)
+00420875	Img_W	int Img_W(void *img)
+00420883	Img_H	int Img_H(void *img)
+00420891	Img_Size
+004208c6	Img_FullRect	void Img_FullRect(void *img, int *rect)
+004208ef	Img_Bounds	void Img_Bounds(void *img, int *rect)
+00420c31	Img_Key	byte Img_Key(void *img)
+00420c3c	Img_Capture	void Img_Capture(int x, int y, int w, int h, void *img)
+00420cf8	Img_DrawOpaque	void Img_DrawOpaque(int x, int y, void *img)
+00420d10	Img_RawSize	int Img_RawSize(int x, int y, int w, int h)
+00420d1e	Img_Remap
+00420e6d	Img_Create	void * Img_Create(int w, int h)
+00420eae	Img_Decompress	void * Img_Decompress(void *img)
+00420f4a	Surf_InitImg
+00420f6d	Gfx_SetTargetImg	void Gfx_SetTargetImg(void *img)
+00420f8d	Img_ToDIB
+00421066	Img_ToDIBAlloc
+004210b7	Img_ToBMP
+0042112c	Dirty_Init
+00421179	Dirty_Shutdown
+00421191	Dirty_Mark
+00421291	Dirty_Clear
+004212c2	Dirty_Flush
+00421447	Img_DrawDirty	void Img_DrawDirty(int x, int y, void *img, int transparent)
+0042149a	Gfx_RestoreBgDirty
+0040207c	Blit_Copy
+004020b8	Blit_CopyKey
+004020f7	Blit_Copy2x
+0040215c	RLE_Blit
+004021c1	RLE_BlitClipped	void RLE_BlitClipped(byte *src, byte *dst, int skipL, int w, int skipR, int h, int dstSkip)
+004022c7	RLE_BlitKey
+00402337	RLE_BlitKeyClipped
+# ---- sprites / animation
+004214c8	Spr_Init
+004214dc	Spr_Shutdown
+004214ec	Spr_Find
+00421525	Spr_CmpZ
+00421536	Spr_Create	int Spr_Create(void *img, int x, int y, int z)
+004215d9	Spr_Delete
+00421618	Spr_DeleteAll
+0042167c	Spr_SetImage	int Spr_SetImage(int id, void *img)
+004216ce	Spr_GetImage	int Spr_GetImage(int id, void **out)
+004216f6	Spr_SetPos
+00421736	Spr_GetPos	int Spr_GetPos(int id, int *pt)
+00421765	Spr_Move
+004217a1	Spr_SetZ
+00421808	Spr_GetZ
+00421830	Spr_SetLocked
+00421860	Spr_IsLocked
+0042188f	Spr_Invalidate
+004218b3	Spr_InvalidateAll
+004218e5	Spr_Overlap
+0042192f	Spr_Update
+00421b54	Mtnc_Count
+00421b69	Mtnc_GetField
+00421b7e	Mtnc_SetField
+00421b92	Mtnc_Ids
+00421ba7	Mtnc_Header
+00421bd4	Ang_FrameImage	void * Ang_FrameImage(void *ang, int index)
+00421c0f	Ang_FrameInfo	int Ang_FrameInfo(void *ang, int frame, int *pos)
+00421ceb	Ang_CountFrames	int Ang_CountFrames(void *ang)
+00421d76	Anim_GetRes	void * Anim_GetRes(int id)
+00421d8f	Anim_Init
+00421db7	Anim_Shutdown
+00421dc7	Anim_Find
+00421e00	Anim_Load
+00421fc1	Anim_Free
+00422013	Anim_IsPlaying
+00422035	Anim_StartWithSprite
+004220ca	Anim_Start
+00422154	Anim_StopSprites
+00422184	Anim_Stop
+0042219d	Anim_SetZ
+004221d1	Anim_UpdateAll
+004223b5	Anim_PlayBlocking	int Anim_PlayBlocking(int resId, void *abortCb)
+0042243e	Anim_PlayFrames	int Anim_PlayFrames(uint resId, void *abortCb, int msPerFrame)
+00422524	Ang_FrameImageAt	void * Ang_FrameImageAt(void *ang, int frame, int *pos)
+00422547	Ang_FirstImage	void * Ang_FirstImage(void *ang, int *pos)
+# ---- transitions
+0042255c	Fx_FlushLine
+004226d6	Fx_FlushLine2
+0042270c	BitCount
+00422723	Fx_Dissolve
+004227da	Fx_WipeRight
+00422849	Fx_WipeLeft
+004228bc	Fx_WipeDown
+00422902	Fx_WipeUp
+00422935	Fx_WipeDiagonal
+00422a0b	Fx_WipeVCenterIn
+00422a67	Fx_BoxOut
+00422c19	Fx_CloseBlack
+00422ce7	Fx_OpenCenter
+# ---- sound
+0042469c	Sound_Init
+00424728	Sound_Shutdown
+00424741	Sound_OpenDevice
+00424879	Sound_CloseDevice
+004248c6	Sound_PlayOnChannel	int Sound_PlayOnChannel(void *kwav, int loop, uint priority)
+0042499c	Sound_StopChannel
+004249e2	Sound_StopAllChannels
+004249fd	Sound_ChannelPlaying
+00424a53	Sound_Play	int Sound_Play(void *kwav, int loop, uint priority)
+00424a86	Sound_Stop
+00424aac	Sound_IsPlaying
+00424ace	Sound_FindChannel
+00424aef	Sound_ChannelHandle
+00424b0e	Sound_Pause
+00424b2e	Sound_Resume
+00424b60	Sound_Reset
+00424b7a	Sound_SetEnabled
+00424bb6	Sound_Update
+00424c10	Sound_RequeueBuffer
+00424cad	Sound_RequeueDone
+00424d00	Sound_WritePos
+00424d6e	Sound_Mix
+004018e0	Mix_0
+004018fe	Mix_1
+00401923	Mix_2
+00401976	Mix_3
+004019d7	Mix_4
+00424ec4	LipSync_Init
+00424ed8	LipSync_Shutdown
+00424ee8	LipSync_Find
+00424f21	LipSync_Add	int LipSync_Add(void *ang, void *frames, int spriteId)
+00424f73	LipSync_Remove
+00424f90	LipSync_Update
+00425049	LipSync_Active
+# ---- dialogs / files
+00425060	Win_DisableSysMenu
+0042509c	Dlg_Show
+00425132	Dlg_Message
+004251c2	Dlg_Edit
+004252f7	Dlg_Center
+00425434	File_Open	int File_Open(char *path, int mode)
+00425484	File_Close
+00425491	File_Delete
+004254bc	File_Read	int File_Read(int h, void *buf, int n)
+004254cf	File_Write	int File_Write(int h, void *buf, int n)
+004254e2	File_Seek
+004254f5	File_Size
+0042552f	File_Exists
+0042555a	File_LoadAll	void * File_LoadAll(char *path)
+004255a1	File_Copy
+0042569f	File_Dialog
+004258c4	Res_InitDir
+00425931	Res_LoadExe
+0042595a	Res_FreeExe
+00425980	Res_Decompress
+00425a7b	Res_Compress
+00427140	Res_OpenArchive
+00427282	Res_CloseAll
+004272c4	Res_Load	void * Res_Load(uint id)
+00427417	Res_Free	void Res_Free(void *p)
+00427426	Res_LastSize
+00401f1d	Huff_DecodeChunk
+# ---- video
+00427504	Video_Play	int Video_Play(char *name, int x, int y, void *abortCb)
+00427696	Video_PlayDoubled	int Video_PlayDoubled(char *name, int x, int y, void *abortCb)
+00427884	Video_Close	void Video_Close(void)
+# ---- text
+00422d8c	Text_DrawBox	void Text_DrawBox(char *text, int x, int y, int w, int h, int center, int color, void *wfn, void *hfn, void *dfn)
+00422ed3	Text_Layout
+00423211	Text_WordWidth
+00423264	Text_Render
+004234c9	Text_DrawChar
+00423526	Str_Checksum
+00423540	Text_DrawScreen	void Text_DrawScreen(int x, int y, char *text, int color, void *wfn, void *hfn, void *dfn)
+0042358d	Text_DrawBox2	void Text_DrawBox2(int x, int y, int w, int h, char *text, int color, void *wfn, void *hfn, void *dfn)
+004235b7	Text_Measure	void Text_Measure(char *text, void *wfn, void *hfn, uint *outW, int *outH)
+00423686	Text_MeasureHeight	int Text_MeasureHeight(char *text, void *wfn, void *hfn, int width)
+0042373c	Font_CharWidth	int Font_CharWidth(int ch, void *font)
+0042374e	Font_Height	int Font_Height(void *font)
+0042375c	Font_DrawChar	int Font_DrawChar(int x, int y, int ch, void *font, int color)
+004238bd	CurFont_CharWidth
+004238d3	CurFont_Height
+004238e4	CurFont_DrawChar
+00423903	Text_DrawFont	void Text_DrawFont(char *text, int x, int y, int w, int h, void *font, int color, int center)
+0042393c	Text_DrawScreenFont	void Text_DrawScreenFont(int x, int y, char *text, void *font, int color)
+0042396c	Text_DrawBoxFont	void Text_DrawBoxFont(int x, int y, int w, int h, char *text, void *font, int color)
+004239a2	Text_MeasureFont	void Text_MeasureFont(char *text, void *font, uint *outW, int *outH)
+004239ca	Text_MeasureHeightFont	int Text_MeasureHeightFont(char *text, void *font, int width)
+004239ef	Edit_RunFont
+00423a30	Edit_Init
+00423ada	Edit_Free
+00423b1c	Edit_HandleKey
+00423ccc	Edit_DragSelect
+00423d65	Edit_Run
+00423e26	Edit_Done
+00423e36	Edit_DrawCaret
+00423e8f	Edit_Insert
+00423f3c	Edit_DeleteRange
+00423fd6	Edit_TokenLen
+0042400b	Edit_PrevPos
+00424031	Edit_NextPos
+00424079	Edit_PrevChar
+004240a9	Edit_SkipCodes
+004240c2	Edit_Normalize
+004240db	Edit_Home
+004240ef	Edit_End
+00424111	Edit_PosFromPoint
+0042418e	Edit_Left
+004241a2	Edit_Right
+004241b6	Edit_Up
+004241f0	Edit_Down
+0042422a	Edit_Backspace
+00424262	Edit_Delete
+0042429f	Edit_DeleteSel
+004242d1	Edit_Cut
+00424344	Edit_Copy
+004243c6	Edit_Paste
+00424420	Edit_InsertChar
+0042443e	Edit_InsertCode
+00424492	Edit_InsertCode2
+004244bb	Edit_InsertColor
+004244f8	Edit_InsertTabs
+0042455c	Edit_InsertCode5
+00424588	Clip_SetText
+0042462a	Clip_GetText
+# ---- engine globals
+0043b76c	g_viewX
+0043b770	g_viewY
+0043b774	g_viewW
+0043b778	g_viewH
+0043b77c	g_bufX
+0043b780	g_bufY
+0043b784	g_bufW
+0043b788	g_bufH
+0043b78c	g_clipX
+0043b790	g_clipY
+0043b794	g_clipW
+0043b798	g_clipH
+0043b754	g_targetBits
+0043b758	g_targetX
+0043b75c	g_targetY
+0043b760	g_targetW
+0043b764	g_targetH
+0043b768	g_targetTopDown
+0043b6d4	g_screenBits
+00437944	g_screenW
+00437948	g_screenH
+00437098	g_palette
+0043b5f4	g_mouseX
+0043b5f8	g_mouseY
+0043b5fc	g_userEvent0
+0043b600	g_userEvent1
+0043b604	g_userEvent2
+00436da4	g_hInstance
+00436da8	g_hWnd
+00436db8	g_appInactive
+00436dbc	g_appRunning
+00436f04	g_curCursor
+00436f10	g_exeDir
+00437e54	g_resDir
+004379cc	g_curFont
+00437acc	g_soundEnabled
+0043959c	g_jmpbuf
+004395bc	g_module
+004395c0	g_prevModule
+0043b5d4	g_hotspots
+0043b608	g_events
+0043b7a8	g_sprites
+0043b7b8	g_anims
+0043b7d0	g_textOverflow
+0043b7d4	g_textFirstLine
+0043b7d8	g_textColumnGap
+# ---- game functions whose parameter counts Ghidra got wrong
+00403af5	FUN_00403af5	ushort FUN_00403af5(char *text)
+004149f6	FUN_004149f6	void FUN_004149f6(int idx, int value)
+0041a221	FUN_0041a221	void FUN_0041a221(char *buf, char kind, char sub)
+0041b48c	FUN_0041b48c	void FUN_0041b48c(void *rec)
+00406274	FUN_00406274

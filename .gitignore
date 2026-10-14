@@ -1,0 +1,14 @@
+.DS_Store
+*.iso
+# Original game data (user-supplied, copyrighted) and derived RE artifacts
+/game/
+re/proj/
+re/out/
+build*/
+# Installers contain the game data
+dist/
+*.dmg
+*.AppImage
+*.deb
+*.exe
+*.log
